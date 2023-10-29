@@ -1,11 +1,25 @@
-import turtle
+from turtle import Turtle, Screen
 
-screen = turtle.getscreen()
+tim = Turtle()
+tim.shape("turtle")
+tim.color("red")
 
-tim = turtle.Turtle()
+def dash(num):
+    """draws dash lines"""
+    for _ in range(num):
+        tim.fd(100/num)
+        tim.penup()
+        tim.fd(100/num)
+        tim.pendown()
 
-for _ in range(1,4):
-    tim.forward(100)
-    tim.right(90)
+for _ in range(4):
+    dash(10)
+    tim.rt(90)
 
 tim.home()
+
+
+
+
+screen = Screen()
+screen.exitonclick()
