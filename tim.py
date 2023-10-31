@@ -18,7 +18,7 @@ for _ in range(4):
 
 tim.home()
 
-
+tim.
 
 
 screen = Screen()
