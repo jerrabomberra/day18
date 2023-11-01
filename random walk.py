@@ -11,31 +11,26 @@ colors = ["yellow","blue","red","green","pink", "purple",
            "LightSeaGreen", "wheat", "SlateGray", "SeaGreen"]
 
 
-
 tim = Turtle()
-tim.shape("turtle")
+tim.hideturtle()
+tim.speed(2)
 
-def shapes(num_sides):
-    """draws shapes"""
-    angle = 360/num_sides
+def random_color():
+     return random.choice(colors)
 
-    for _ in range(num_sides):
-        tim.fd(100)
-        tim.rt(angle)
+def random_paths():
+    dirs = [90, -90,  180]
+    return random.choice(dirs)
 
 
+print(random_paths())
+print(random_color())
+tim.color(random_color())
+tim.fd(200)
 tim.lt(90)
-tim.penup()
-tim.fd(250)
-tim.lt(90)
-tim.fd(50)
-tim.rt(180)
-tim.pendown()
+tim.fd(200)
 
 
-for _ in range(3,21):
-   tim.color(random.choice(colors))
-   shapes(_)
 
 screen = Screen()
 screen.exitonclick()
