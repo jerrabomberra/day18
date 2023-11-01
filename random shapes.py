@@ -13,12 +13,12 @@ square = 90=4"""
 tim = Turtle()
 tim.shape("turtle")
 
-def shapes(num):
+def shapes(num_sides):
     """draws dash lines"""
-    for _ in range(num):
+    for _ in range(num_sides):
         tim.color(colour)
         tim.fd(100)
-        tim.rt(360/num)
+        tim.rt(360/num_sides)
 
 
 
