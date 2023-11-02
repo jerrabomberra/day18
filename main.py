@@ -16,19 +16,15 @@ rgb_colors = [(35, 19, 15), (197, 144, 123), (30, 106, 155),
               (196, 135, 155), (156, 62, 90), (221, 85, 66), 
               (153, 17, 37), (202, 79, 104)]
 
-# colors = colorgram.extract('download.jpeg', 15)
-# for color in colors:
-#     _colors.append(color.)
-
-# print(_colors)
 
 def random_color():
+     """ returns a random rgb color"""
      return random.choice(rgb_colors)
 
 paint = 0
-dot_distance = 10
-width = 40
-height = 40
+dot_distance = 50
+width = 10
+height = 10
 
 tim = Turtle()
 tim.penup()
@@ -41,7 +37,7 @@ try:
     for y in range(height):
         for i in range(width):
             tim.pendown()
-            tim.dot(5, random_color())
+            tim.dot(20, random_color())
             tim.penup()
             tim.forward(dot_distance)
         tim.backward(dot_distance * width)
@@ -49,7 +45,7 @@ try:
         tim.forward(dot_distance)
         tim.left(90)
 except:
-    tim.bye()
+    tim.done()
 
 screen.exitonclick()
 
