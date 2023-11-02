@@ -27,8 +27,9 @@ height = 40
 
 tim = Turtle()
 tim.penup()
-tim.goto(tim.pos() + (-200, 200))
 tim.hideturtle()
+tim.goto(tim.pos() + (-200, 200))
+
 tim.speed('fastest')
 
 try:
