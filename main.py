@@ -49,7 +49,7 @@ try:
         tim.forward(dot_distance)
         tim.left(90)
 except:
-    tim.done()
+    tim.bye()
 
 screen.exitonclick()
 
